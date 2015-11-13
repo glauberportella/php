@@ -184,3 +184,8 @@ nbproject/
 #################
 .idea/
 *.iml
+
+####################################################
+## SublimeText with SublimeCodeIntel and PHPIntel
+####################################################
+.phpintel

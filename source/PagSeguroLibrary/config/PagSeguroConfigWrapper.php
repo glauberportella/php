@@ -72,15 +72,15 @@ class PagSeguroConfigWrapper
     /**
      * @return array
      */
-    public static function getConfig()
+    public function getConfig()
     {
         $PagSeguroConfig = array();
 
         $PagSeguroConfig = array_merge_recursive(
-            self::getEnvironment(),
-            self::getCredentials(),
-            self::getApplicationEncoding(),
-            self::getLogConfig()
+            $this->getEnvironment(),
+            $this->getCredentials(),
+            $this->getApplicationEncoding(),
+            $this->getLogConfig()
         );
 
         return $PagSeguroConfig;
